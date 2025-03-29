@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+center {
+    background-color: red;
+    height: 400px;
+    width: 400px;
+}
+
+.inputBox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 300px;
+}
+
+.qr-box {
+   
+    background-color: rgb(17, 255, 0);
+    height: 200px;
+    width: 300px;
+}
+.btn1 {
+    background-color: blue;
+    color: white; /* Add text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor style */
+}
