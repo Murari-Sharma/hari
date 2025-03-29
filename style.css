@@ -1,0 +1,206 @@
+/* General Reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif; /* Added a default font for better readability */
+}
+
+/* Page Layout */
+.page1 {
+  display: flex;
+  flex-wrap: wrap;  /* Allow wrapping of content */
+  height: 100vh;
+  width: 100%;
+}
+
+/* Navbar Styling */
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.logo {
+  font-size: 2.3rem;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #117964;
+}
+
+/* Main Content Area */
+.pageDiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 85px; /* Adjust for navbar height */
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.imgContainer {
+  height: 100%;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: 10px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.listContainer {
+  height: 100%;
+  width: 38%;
+  border: 5px solid black;
+  border-radius: 9px;
+  padding: 20px; /* Added padding for better layout */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column; /* Stack logo and menu items */
+    align-items: center;
+    height: auto;
+  }
+
+  .menu-items {
+    display: none; /* Hide menu items on small screens */
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .navbar input[type="checkbox"]:checked ~ .menu-items {
+    display: flex; /* Show menu items when hamburger is clicked */
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .hamburger-lines {
+    display: block;
+    cursor: pointer;
+  }
+
+  .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+
+  .page1 {
+    flex-direction: column; /* Stack content vertically on small screens */
+  }
+
+  .imgContainer, .listContainer {
+    width: 100%; /* Take up full width on mobile */
+    margin: 0;
+  }
+
+  .listContainer {
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .inputBox {
+    width: 90%; /* Make the input box take more width */
+    margin-left: 5%;
+  }
+
+  .inputButton {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .listName {
+    margin-left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  ol {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  li {
+    font-size: large; /* Make the text a bit smaller on mobile */
+  }
+}
+
+/* Other Styles for input and list */
+.inputBox {
+  height: 35px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: larger;
+  padding-left: 10px;
+}
+
+.inputButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.listName {
+  padding-top: 10px;
+  margin-left: 165px;
+  padding-bottom: 20px;
+}
+
+ol {
+  margin-top: 45px;
+}
+
+li {
+  font-size: xx-large;
+  font-weight: 600;
+}
