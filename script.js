@@ -25,10 +25,17 @@ async function chat() {
   } else if (input.includes("name")) {
     reply = "🤖 I'm HemantBot – your friendly construction assistant!";
   } else if (input.includes("lakshay")) {
+    reply = "😅 topper";
+  
+  else if (input.includes("lakshay hai")) {
     reply = "😅 chutiya";
   } else if (input.includes("hari")) {
     reply = "🌟 Hari is a good boy, always helpful!";
-  } else if (input.includes("help")) {
+  }  else if (input.includes("hemant")) {
+    reply = "🌟Topper";
+  }
+  
+  else if (input.includes("help")) {
     reply = "🛠️ You can ask about materials, contact info, or even just say hi!";
   } else if (input.includes("bye")) {
     reply = "👋 Goodbye! Talk to you soon.";
