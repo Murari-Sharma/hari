@@ -25,7 +25,7 @@ async function chat() {
   } else if (input.includes("name")) {
     reply = "🤖 I'm HemantBot – your friendly construction assistant!";
   } else if (input.includes("lakshay")) {
-    reply = "😅 Lakshay is... quite the character, huh?";
+    reply = "😅 chutiya";
   } else if (input.includes("hari")) {
     reply = "🌟 Hari is a good boy, always helpful!";
   } else if (input.includes("help")) {
